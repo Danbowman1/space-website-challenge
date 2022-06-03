@@ -1,0 +1,164 @@
+* {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.7px;
+}
+
+nav {
+    padding: 2rem 0 2rem 2rem ;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+}
+
+.line {
+    width: 32%;
+    height: 0;
+    border: .5px solid #97979719;
+    background-color: #97979719;
+    position: relative;
+    left: 5%;
+    z-index: 1;
+}
+
+.NavBox {
+    width: 830px;
+    height: 96px;
+    padding: 0 40px;
+    background: #97979719;
+    backdrop-filter: blur(20px);
+    z-index: 0;
+    
+}
+
+.NavBox span {
+    font-weight: bold;
+}
+
+.NavBox a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mobileNav {
+    display: none;
+}
+
+.NavLinks{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute; left: 50%; top: 32%;
+    transform: translate(-50%, -50%);
+}
+
+.NavLinks li {
+    margin-top: 38px;
+    display: flex;
+    list-style: none;
+}
+
+.NavLinks span {
+    font-weight: bold;
+}
+
+.NavLinks a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.activeLink {
+    color: red;
+}
+
+
+/* Laptops / desktops */
+
+@media screen 
+and (min-width: 1445px) {
+    .line {
+        width: 40%;
+        
+    }
+}
+
+/* Large Screens */
+@media screen 
+and (min-width: 1700px) {
+    .line {
+        width: 50%;
+        
+    }
+}
+
+
+/* Phone Screen */
+@media screen
+and (min-width: 280px) 
+and (max-width: 765px) {
+    .navBar {
+        display: none;
+    }
+
+    .mobileNav {
+        display: flex;
+        align-items: center;
+    }
+
+    .HamBurger {
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .NavLinks  {
+        height: 100vh;
+        width: 50%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        transform: none;
+        top: 0;
+        background: #97979719;
+        backdrop-filter: blur(20px);
+    }
+}
+
+
+/* Tablet Screen */
+
+@media only screen 
+and (min-width: 765px) 
+and (max-width: 1024px) {
+    
+    .navBar {
+        padding: 0;
+    }
+
+    .logo {
+        width: 80px;
+        margin-left: 30px;
+    }
+
+    .line {
+        visibility: hidden;
+    }
+
+    .NavBox {
+        width: 450px;
+        padding: 0 20px;
+    }
+
+    .NavBox span {
+        display: none;
+    }
+}
+
