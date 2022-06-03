@@ -1,39 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-}
-
-.home{
-  width: 450px;
-}
-
-.home h2 {
-  color: #D0D6F9;
-  font-weight: 400;
-  letter-spacing: 4.7px;
-}
-
-.home h1 {   
-  margin: 0;  
-  font-family: 'Bellefair', serif;
-  font-size: 150px;
-  font-weight: 300;
-}
-
-.home p {
-  color: #D0D6F9;
-  font-size: 18px;
-  line-height: 32px;
-}
-
-.homeExplore p {
-  width: 274px;
-  height: 274px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Bellefair', serif;  
-  font-size: 32px;
-  color: black ;
-  background: white;
-  border-radius: 50%;
+  
 }

@@ -1,28 +1,96 @@
-.container{
+.container {
+    margin-top: 10em;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 15%;
+}
+
+.homeCard {
+    width: 450px;
+}
+
+.homeCard h2 {
+    color: hsl(231, 77%, 90%);
+    font-weight: 400;
+    letter-spacing: 4.7px;
+}
+
+.homeCard h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    font-weight: 300;
+}
+
+.homeCard p {
+    color: hsl(231, 77%, 90%);
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.homeExplore {
+    width: 274px;
+    height: 274px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.homeExplore p {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    color: black;
+}
+
+.homeExplore:hover {
+    outline: 45px solid #b4b4b46f;
 }
 
 /* Tablet */
-@media only screen 
-and (min-width: 765px) 
-and (max-width: 1024px) {
+@media only screen and (min-width: 765px) and (max-width: 1024px) {
     .container {
+        margin-top: 60px;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
+
+    .homeExplore {
+        margin: 60px 0;
+    }
 }
 
 /* Phone */
-@media screen
-and (min-width: 280px) 
-and (max-width: 765px) {
+@media screen and (min-width: 280px) and (max-width: 765px) {
     .container {
+        margin-top: 60px;
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+
+    .homeExplore {
+        margin: 80px 0;
+    }
+
+    .homeCard {
+        width: 327px;
+    }
+
+    .homeCard h2 {
+        font-size: 16px;
+    } 
+
+    .homeCard h1 {
+        font-size: 80px;
+        margin: 30px 0;
+    }
+
+    .homeCard p {
+        font-size: 15px;
     }
 }

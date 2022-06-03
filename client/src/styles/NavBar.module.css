@@ -58,9 +58,13 @@ nav {
 }
 
 .NavLinks li {
-    margin-top: 38px;
+    margin-top: 39px;
     display: flex;
     list-style: none;
+}
+
+.NavLinks li:hover {
+    border-bottom: 6px solid rgba(255, 255, 255, 0.574);
 }
 
 .NavLinks span {
@@ -72,11 +76,6 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
 }
-
-.activeLink {
-    color: red;
-}
-
 
 /* Laptops / desktops */
 
