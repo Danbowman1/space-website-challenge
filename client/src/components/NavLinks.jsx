@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const NavLinks = () => {
 
     let activeStyle = {
-        borderBottom: '6px solid white'
+        borderBottom: '3px solid #fff'
     }
 
     

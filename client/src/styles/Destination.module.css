@@ -1,0 +1,108 @@
+* {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.yourDestination {
+    margin-left: 166px;
+    margin-top: 52px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 4.7px;
+    text-transform: uppercase;
+}
+
+.yourDestination span {
+    margin-right: 20px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 4.7px;
+    opacity: 0.25;
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planetImg {
+    height: 445px;
+    width: 445px;
+    margin-left: 16.5%;
+    margin-top: 5.5%;
+}
+
+.cardContainer {
+    width: 31%;
+    max-width: 550px;
+    height: 30%;
+    margin-right: 10.5%;
+}
+
+.cardTabs ul {
+    width: 280px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; 
+    color: white;
+    list-style: none;
+}
+
+.cardTabs li a{
+    text-decoration: none;
+    color: #D0D6F9;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+.cardTabs li a:hover {
+    padding-bottom: 12px ;
+    border-bottom: 3px solid hsl(0, 0%, 50%);
+    
+}
+
+.cardDesc h1{
+    margin: 37px 0 14px 0;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 400;
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+}
+
+.cardDesc p {
+    margin-bottom: 52px;
+    color: #D0D6F9;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: .5px;
+    line-height: 32px;
+}
+
+.cardFooter {
+    width: 333px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.cardFooter p {
+    margin: 20px 0 14px 0;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+}
+
+.cardFooter h2 {
+    margin: 0;
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #fff;
+}

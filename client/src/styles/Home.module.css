@@ -11,6 +11,7 @@
 
 .homeCard h2 {
     color: hsl(231, 77%, 90%);
+    font-size: 28px;
     font-weight: 400;
     letter-spacing: 4.7px;
 }
@@ -47,7 +48,7 @@
 }
 
 .homeExplore:hover {
-    outline: 45px solid #b4b4b46f;
+    outline: 45px solid  #ffffff21;
 }
 
 /* Tablet */
