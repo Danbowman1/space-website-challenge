@@ -1,0 +1,78 @@
+* {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.yourCrew span {
+    color: #fff;
+    opacity: 0.5;
+    font-weight: bold;
+    letter-spacing: 4.7px;
+}
+
+.yourCrew {
+    margin-bottom: 154px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: 4.7px;
+}
+
+.crewContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12%;
+}
+
+.role {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.crewContainer h1 {
+    margin-top: 15px;
+    font-family: 'Bellefair';
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.bio {
+width: 444px;
+margin-bottom: 23%;
+font-family: 'Barlow';
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+letter-spacing: .7    px;
+color: #D0D6F9;
+}
+
+.carousel {
+    width: 132px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    color: #fff;
+    fill: #fff;
+    opacity: .17;
+}
+
+.crewImg {
+    position: absolute;
+    left: 55%;
+    bottom: 0;
+    object-fit: contain;
+    height: 79%;
+    width: 39%;
+}

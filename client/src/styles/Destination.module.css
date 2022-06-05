@@ -3,13 +3,18 @@
 }
 
 .yourDestination {
-    margin-left: 166px;
-    margin-top: 52px;
+    margin-left: 11%;
     color: #fff;
     font-size: 28px;
     font-weight: normal;
     letter-spacing: 4.7px;
     text-transform: uppercase;
+}
+
+.contentContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .yourDestination span {
@@ -20,24 +25,17 @@
     opacity: 0.25;
 }
 
-.body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .planetImg {
     height: 445px;
     width: 445px;
-    margin-left: 16.5%;
+    margin-left: 15.5%;
     margin-top: 5.5%;
 }
 
 .cardContainer {
-    width: 31%;
-    max-width: 550px;
-    height: 30%;
-    margin-right: 10.5%;
+    width: 445px;
+    margin-right: 11.5%;
+    margin-top: 2%;
 }
 
 .cardTabs ul {
@@ -49,17 +47,31 @@
     list-style: none;
 }
 
-.cardTabs li a{
+.cardTabs li{
     text-decoration: none;
     color: #D0D6F9;
     letter-spacing: 2.7px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
-.cardTabs li a:hover {
+.activeTab {
+    padding-bottom: 12px ;
+    border-bottom: 3px solid #fff;
+}
+
+.cardTabs li:hover {
     padding-bottom: 12px ;
     border-bottom: 3px solid hsl(0, 0%, 50%);
     
+}
+
+.content {
+    display: none;
+}
+
+.activeContent {
+    display: block;
 }
 
 .cardDesc h1{

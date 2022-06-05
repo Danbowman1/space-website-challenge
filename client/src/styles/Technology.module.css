@@ -1,0 +1,63 @@
+* {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.techContainer {
+    margin-left: 11.5%;
+}
+
+.launch span {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: #FFFFFF;
+    opacity: 0.25;
+}
+
+.launch {
+    margin-bottom: 154px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: 4.7px;
+}
+
+.cardContainer {
+    
+    display: flex;
+}
+
+.tabs {
+    height: 303px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tab {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff6f;
+    border-radius: 50%;
+}
+
+.tab:hover {
+    border: 1px solid #fff     ;
+}
+
+.tab p {
+    font-size: 32px;
+    color: white;
+    font-family: 'Bellefair';
+    font-weight: 400;
+    
+}
+
+.cardBody {
+
+}
