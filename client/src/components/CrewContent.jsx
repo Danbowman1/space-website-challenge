@@ -1,7 +1,6 @@
 import React from 'react'
 import classes from '../styles/Crew.module.css'
 import { FiCircle } from 'react-icons/fi'
-
 const CrewContent = (props) => {
 
     const { role, name, bio, image } = props

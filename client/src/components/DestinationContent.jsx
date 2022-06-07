@@ -6,8 +6,6 @@ const DestinationContent = (props) => {
 
     const { Name, Desc, Dist, Travel, image, toggleState, setToggleState } = props
     
-
-    
     const toggleTab = (index) => {
         setToggleState(index)
     }

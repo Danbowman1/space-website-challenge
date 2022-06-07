@@ -4,6 +4,11 @@
 
 .techContainer {
     margin-left: 11.5%;
+    display: flex;
+}
+
+.contentContainer {
+    height: 500px;
 }
 
 .launch span {
@@ -25,8 +30,9 @@
 }
 
 .cardContainer {
-    
+    height: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
 .tabs {
@@ -44,10 +50,29 @@
     align-items: center;
     border: 1px solid #ffffff6f;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .tab:hover {
-    border: 1px solid #fff     ;
+    border: 1px solid #fff;
+}
+
+.activeTab {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ffffff6f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.activeTab p {
+    font-size: 32px;
+    font-family: 'Bellefair';
+    font-weight: 400;
 }
 
 .tab p {
@@ -58,6 +83,45 @@
     
 }
 
-.cardBody {
+.content {
+    display: none;
+}
 
+.activeContent {
+    display: block;
+}
+
+.cardBody {
+margin-left: 60px;
+}
+
+.intro {
+    margin: 0;
+    color: #D0D6F9;
+    letter-spacing: 2.7px;
+
+}
+
+.cardBody h1 {
+    margin: 11px 0 17px 0;
+    color: white;
+    font-size: 56px;
+    font-weight: 400;
+    font-family: 'Bellefair';
+    text-transform: uppercase;
+}
+
+.desc {
+    margin-top: 0;
+    width: 74%;
+    font-size: 18px;
+    color: #D0D6F9;
+    line-height: 32px;
+    letter-spacing: .7px;
+    font-family: 'Barlow';
+}
+
+.techImg {
+    width: 58%;
+    margin: 100px 0;
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import data from '../json/data.json'
 import classes from '../styles/Crew.module.css'
+import doug from '../assets/crew/image-douglas-hurley.png'
 import background from '../styles/background.module.css'
 import NavBar from '../components/NavBar'
 import CrewContent from '../components/CrewContent'
