@@ -10,26 +10,28 @@ const DestinationContent = (props) => {
         setToggleState(index)
     }
 
+    
+
     return (
         <div className={classes.contentContainer}>
             <img src={image} alt="planet" className={classes.planetImg}/>
             <div className={classes.cardContainer}>
                 <div className={classes.cardTabs}>
                         <ul>
+                            <li className={toggleState === 0 ? classes.activeTab : null}
+                            onClick={() => toggleTab(0)}
+                            >Moon</li>
+
                             <li className={toggleState === 1 ? classes.activeTab : null}
                             onClick={() => toggleTab(1)}
-                            >Moon</li>
+                            >Mars</li>
 
                             <li className={toggleState === 2 ? classes.activeTab : null}
                             onClick={() => toggleTab(2)}
-                            >Mars</li>
+                            >Europa</li>
 
                             <li className={toggleState === 3 ? classes.activeTab : null}
                             onClick={() => toggleTab(3)}
-                            >Europa</li>
-
-                            <li className={toggleState === 4 ? classes.activeTab : null}
-                            onClick={() => toggleTab(4)}
                             >Titan</li>
                         </ul>
                     </div>

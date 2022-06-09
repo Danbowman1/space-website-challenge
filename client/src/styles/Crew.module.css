@@ -10,7 +10,7 @@
 }
 
 .yourCrew {
-    margin-bottom: 154px;
+    margin-bottom: 170px;
     font-size: 28px;
     text-transform: uppercase;
     color: #fff;
@@ -47,12 +47,12 @@
 
 .bio {
 width: 444px;
-margin-bottom: 23%;
+height: 320px;
 font-family: 'Barlow';
 font-weight: 400;
 font-size: 18px;
 line-height: 32px;
-letter-spacing: .7    px;
+letter-spacing: .7px;
 color: #D0D6F9;
 }
 
@@ -62,10 +62,24 @@ color: #D0D6F9;
     justify-content: space-between;
 }
 
+.active {
+    color: #fff;
+    fill: #fff;
+}
+
 .circle {
     color: #fff;
     fill: #fff;
     opacity: .17;
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+}
+
+.activeContent {
+    display: block;
 }
 
 .crewImg {

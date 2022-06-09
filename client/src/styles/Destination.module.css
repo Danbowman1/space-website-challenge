@@ -26,8 +26,10 @@
 }
 
 .planetImg {
-    height: 445px;
-    width: 445px;
+    max-width: 486px;
+    min-width: 350px;
+    height: 31%;
+    width: 31%;
     margin-left: 15.5%;
     margin-top: 5.5%;
 }
@@ -117,4 +119,17 @@
     line-height: 32px;
     text-transform: uppercase;
     color: #fff;
+}
+
+
+@media only screen 
+and (min-width: 765px) 
+and (max-width: 1024px) {
+    .contentContainer {
+        flex-direction: column;
+    }
+
+    .cardContainer {
+        margin: 0;
+    }
 }

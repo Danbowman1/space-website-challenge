@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import data from '../json/data.json'
 import moon from '../assets/destination/image-moon.png'
 import mars from '../assets/destination/image-mars.png'
@@ -11,9 +11,10 @@ import DestinationContent from '../components/DestinationContent'
 
 
 const Destination = () => {
+
+
     
-    
-    const [ toggleState, setToggleState ] = useState(1)
+    let [ toggleState, setToggleState ] = useState(0)
 
 
     return (
@@ -21,9 +22,9 @@ const Destination = () => {
         <NavBar />
         <h2 className={classes.yourDestination}><span>01</span> Pick your destination</h2>
             <div className={classes.body}>
-                <div className={toggleState === 1 ? classes.activeContent : classes.content}>
+                <div className={toggleState === 0 ? classes.activeContent : classes.content}>
                 <DestinationContent 
-                    toggleState={1}
+                    toggleState={0}
                     setToggleState={setToggleState}
                     image={data.destinations[0].images.png}
                     Name={data.destinations[0].name}
@@ -32,9 +33,9 @@ const Destination = () => {
                     Travel={data.destinations[0].travel}
                     />
                 </div>
-                <div className={toggleState === 2 ? classes.activeContent : classes.content}>
+                <div className={toggleState === 1 ? classes.activeContent : classes.content}>
                 <DestinationContent 
-                    toggleState={2}
+                    toggleState={1}
                     setToggleState={setToggleState}
                     image={data.destinations[1].images.png}
                     Name={data.destinations[1].name}
@@ -43,9 +44,9 @@ const Destination = () => {
                     Travel={data.destinations[1].travel}
                     />
                 </div>
-                <div className={toggleState === 3 ? classes.activeContent : classes.content}>
+                <div className={toggleState === 2 ? classes.activeContent : classes.content}>
                 <DestinationContent
-                    toggleState={3}
+                    toggleState={2}
                     setToggleState={setToggleState}
                     image={data.destinations[2].images.png}
                     Name={data.destinations[2].name}
@@ -54,9 +55,9 @@ const Destination = () => {
                     Travel={data.destinations[2].travel}
                     />
                 </div>
-                <div className={toggleState === 4 ? classes.activeContent : classes.content}>
+                <div className={toggleState === 3 ? classes.activeContent : classes.content}>
                 <DestinationContent 
-                    toggleState={4}
+                    toggleState={3}
                     setToggleState={setToggleState}
                     image={data.destinations[3].images.png}
                     Name={data.destinations[3].name}

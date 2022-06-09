@@ -122,7 +122,8 @@ and (max-width: 765px) {
     .NavLinks  {
         height: 100vh;
         width: 50%;
-        padding-bottom: 50%;
+        padding-bottom: 80%;
+        padding-top: 12%;
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -131,6 +132,10 @@ and (max-width: 765px) {
         top: 0;
         background: #97979719;
         backdrop-filter: blur(20px);
+    }
+
+    .NavLinks ul {
+        height: 100px;
     }
 }
 
