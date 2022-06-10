@@ -1,10 +1,11 @@
 * {
     font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
     letter-spacing: 2.7px;
 }
 
 nav {
-    padding: 2.4rem 0 2rem 3.3rem ;
+    padding: 1.4rem;
     display: flex;
     align-items: center;
 }
@@ -29,10 +30,9 @@ nav {
     width: 830px;
     height: 96px;
     padding: 0 40px;
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(81.5485px);
+    background: #97979719;
+    backdrop-filter: blur(20px);
     z-index: 0;
-    
 }
 
 .NavBox span {

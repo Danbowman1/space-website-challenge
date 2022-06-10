@@ -18,11 +18,10 @@ const Destination = () => {
 
 
     return (
-        <div className={background.destination}>
+        <div>
         <NavBar />
         <h2 className={classes.yourDestination}><span>01</span> Pick your destination</h2>
-            <div className={classes.body}>
-                <div className={toggleState === 0 ? classes.activeContent : classes.content}>
+            <div className={toggleState === 0 ? classes.activeContent : classes.content}>
                 <DestinationContent 
                     toggleState={0}
                     setToggleState={setToggleState}
@@ -65,7 +64,6 @@ const Destination = () => {
                     Dist={data.destinations[3].distance}
                     Travel={data.destinations[3].travel}
                     />
-                </div>
             </div>
         </div>
     )

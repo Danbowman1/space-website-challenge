@@ -10,8 +10,6 @@ const DestinationContent = (props) => {
         setToggleState(index)
     }
 
-    
-
     return (
         <div className={classes.contentContainer}>
             <img src={image} alt="planet" className={classes.planetImg}/>

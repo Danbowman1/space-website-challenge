@@ -1,48 +1,50 @@
 * {
     font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+}
+
+.contentContainer {
+    display: grid;
+    justify-items: center;
 }
 
 .yourDestination {
-    margin-left: 11%;
+    margin-top: 4%;
+    text-align: center;
     color: #fff;
-    font-size: 28px;
+    font-size: 1rem;
     font-weight: normal;
     letter-spacing: 4.7px;
     text-transform: uppercase;
 }
 
-.contentContainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
 .yourDestination span {
-    margin-right: 20px;
+    margin-right: 2%;
     color: #fff;
+    font-size: 1rem;
     font-weight: bold;
     letter-spacing: 4.7px;
     opacity: 0.25;
 }
 
 .planetImg {
-    max-width: 486px;
-    min-width: 350px;
-    height: 31%;
-    width: 31%;
-    margin-left: 15.5%;
-    margin-top: 5.5%;
+    margin: 5%;
+    width: 40%;
+    min-height: 250px;
+    min-width: 250px;
 }
 
 .cardContainer {
-    width: 445px;
-    margin-right: 11.5%;
+    text-align: center;
+    width: 80%;
+    min-width: 250px;
     margin-top: 2%;
 }
 
 .cardTabs ul {
-    width: 280px;
+    margin: 0 auto;
     padding: 0;
+    max-width: 285px;
     display: flex;
     justify-content: space-between; 
     color: white;
@@ -52,6 +54,7 @@
 .cardTabs li{
     text-decoration: none;
     color: #D0D6F9;
+    font-size: .9rem;
     letter-spacing: 2.7px;
     text-transform: uppercase;
     cursor: pointer;
@@ -79,14 +82,14 @@
 .cardDesc h1{
     margin: 37px 0 14px 0;
     color: #fff;
-    font-size: 100px;
+    font-size: 3.5rem;
     font-weight: 400;
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
 }
 
 .cardDesc p {
-    margin-bottom: 52px;
+    margin-bottom: 14%;
     color: #D0D6F9;
     font-size: 18px;
     font-weight: 200;
@@ -96,10 +99,8 @@
 }
 
 .cardFooter {
-    width: 333px;
-    display: flex;
-    justify-content: space-between;
-    
+    margin-bottom: 10%;
+    text-align: center;
 }
 
 .cardFooter p {
@@ -122,14 +123,51 @@
 }
 
 
-@media only screen 
-and (min-width: 765px) 
-and (max-width: 1024px) {
+/* Tablet Styling */
+
+@media only screen and (min-width: 768px) {
+    .yourDestination, .yourDestination span {
+        margin-left: 3%;
+        text-align: start;
+        font-size: 1.3rem;
+    }
+
+    .cardTabs li {
+        font-size: 1rem;
+    }
+
+    .cardDesc h1 {
+        font-size: 5rem;
+    }
+
+    .cardFooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile Styling */
+
+@media only screen and (min-width: 1000px) {
     .contentContainer {
-        flex-direction: column;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .yourDestination, .yourDestination span {
+        font-size: 28px;
     }
 
     .cardContainer {
+        text-align: start;
+    }
+
+    .cardTabs ul {
         margin: 0;
+    }
+
+    .cardContainer {
+        max-width: 650px;
     }
 }
