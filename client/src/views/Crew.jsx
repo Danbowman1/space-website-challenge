@@ -29,47 +29,45 @@ const Crew = () => {
     return (
         <div className={background.crew}>
         <NavBar />
-            <div>
-                <div className={toggleState === 0 ? classes.activeContent : classes.content}>
-                    <CrewContent
-                    toggleState={0}
-                    setToggleState={setToggleState}
-                    image={data.crew[0].images.png}
-                    role={data.crew[0].role}
-                    name={data.crew[0].name}
-                    bio={data.crew[0].bio}
-                    />
-                </div>
-                <div className={toggleState === 1 ? classes.activeContent : classes.content}>
-                    <CrewContent
-                    toggleState={1}
-                    setToggleState={setToggleState}
-                    image={data.crew[1].images.png}
-                    role={data.crew[1].role}
-                    name={data.crew[1].name}
-                    bio={data.crew[1].bio}
-                    />
-                </div>
-                <div className={toggleState === 2 ? classes.activeContent : classes.content}>
-                    <CrewContent
-                    toggleState={2}
-                    setToggleState={setToggleState}
-                    image={data.crew[2].images.png}
-                    role={data.crew[2].role}
-                    name={data.crew[2].name}
-                    bio={data.crew[2].bio}
-                    />
-                </div>
-                <div className={toggleState === 3 ? classes.activeContent : classes.content}>
-                    <CrewContent
-                    toggleState={3}
-                    setToggleState={setToggleState}
-                    image={data.crew[3].images.png}
-                    role={data.crew[3].role}
-                    name={data.crew[3].name}
-                    bio={data.crew[3].bio}
-                    />
-                </div>
+            <div className={toggleState === 0 ? classes.activeContent : classes.content}>
+                <CrewContent
+                toggleState={0}
+                setToggleState={setToggleState}
+                image={data.crew[0].images.png}
+                role={data.crew[0].role}
+                name={data.crew[0].name}
+                bio={data.crew[0].bio}
+                />
+            </div>
+            <div className={toggleState === 1 ? classes.activeContent : classes.content}>
+                <CrewContent
+                toggleState={1}
+                setToggleState={setToggleState}
+                image={data.crew[1].images.png}
+                role={data.crew[1].role}
+                name={data.crew[1].name}
+                bio={data.crew[1].bio}                   
+                />
+            </div>
+            <div className={toggleState === 2 ? classes.activeContent : classes.content}>
+            <CrewContent
+            toggleState={2}
+            setToggleState={setToggleState}
+            image={data.crew[2].images.png}
+            role={data.crew[2].role}
+            name={data.crew[2].name}
+            bio={data.crew[2].bio}
+            />
+            </div>
+            <div className={toggleState === 3 ? classes.activeContent : classes.content}>
+            <CrewContent
+            toggleState={3}
+            setToggleState={setToggleState}
+            image={data.crew[3].images.png}
+            role={data.crew[3].role}
+            name={data.crew[3].name}
+            bio={data.crew[3].bio}
+            />
             </div>
         </div>
     )

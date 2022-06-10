@@ -10,26 +10,37 @@
 }
 
 .yourCrew {
-    margin-bottom: 170px;
-    font-size: 28px;
+    text-align: center;
     text-transform: uppercase;
     color: #fff;
     font-weight: normal;
     letter-spacing: 4.7px;
+    grid-area: greeting;
 }
 
 .crewContainer {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 12%;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    grid-template-areas: 
+        "greeting"
+        "image"
+        "carousel"
+        "card"
+    ;
+}
+
+.cardContainer {
+    width: 80%;
+    min-width: 250px;
+    grid-area: card;
 }
 
 .role {
     font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 37px;
+    line-height: 18px;
     text-transform: uppercase;
     color: #fff;
     opacity: 0.5;
@@ -39,18 +50,16 @@
     margin-top: 15px;
     font-family: 'Bellefair';
     font-weight: 400;
-    font-size: 56px;
+    font-size: 24px;
     line-height: 64px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
 .bio {
-width: 444px;
-height: 320px;
 font-family: 'Barlow';
 font-weight: 400;
-font-size: 18px;
+font-size: 15px;
 line-height: 32px;
 letter-spacing: .7px;
 color: #D0D6F9;
@@ -60,6 +69,7 @@ color: #D0D6F9;
     width: 132px;
     display: flex;
     justify-content: space-between;
+    grid-area: carousel;
 }
 
 .active {
@@ -83,10 +93,7 @@ color: #D0D6F9;
 }
 
 .crewImg {
-    position: absolute;
-    left: 55%;
-    bottom: 0;
-    object-fit: contain;
     height: 79%;
     width: 39%;
+    grid-area: image;
 }
