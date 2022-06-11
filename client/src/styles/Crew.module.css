@@ -37,6 +37,7 @@
 }
 
 .role {
+    margin: 0;
     font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
@@ -47,11 +48,11 @@
 }
 
 .crewContainer h1 {
-    margin-top: 15px;
+    margin-top: 6px;
     font-family: 'Bellefair';
     font-weight: 400;
     font-size: 24px;
-    line-height: 64px;
+    line-height: 28px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -66,6 +67,7 @@ color: #D0D6F9;
 }
 
 .carousel {
+    margin-bottom: 32px;
     width: 132px;
     display: flex;
     justify-content: space-between;
@@ -93,7 +95,78 @@ color: #D0D6F9;
 }
 
 .crewImg {
-    height: 79%;
-    width: 39%;
+    height: 222px;
+    margin-top: 32px;
     grid-area: image;
+}
+
+.imgBorder {
+    width: 327px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #383B4B;
+}
+
+/* Tablet styling */
+
+@media only screen and (min-width: 768px) {
+    .crewContainer {
+        grid-template-areas: 
+        "greeting"
+        "card"
+        "carousel"
+        "image";             
+    }
+
+    .yourCrew, .yourCrew span {
+        margin-top: 40px;
+        margin-left: 38px;
+        text-align: start;
+        font-size: 20px;
+    }
+
+    .role {
+        font-size: 24px;
+    }
+
+    .crewContainer h1 {
+        margin-top: 8px;
+        line-height: 46px;
+        font-size: 40px;
+    }
+
+    .crewImg {
+        height: 572px;
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+    }
+
+    .bio {
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+
+    .imgBorder {
+        border: none;
+    }
+}
+
+/* Desktop styles */
+
+@media only screen and (min-width: 1000px) {
+    .crewContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;             
+    }
+
+    .cardContainer {
+        width: 786px;
+    }
+
+    .crewImg {
+        position: absolute;
+        left: 65%;
+    }
 }

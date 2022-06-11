@@ -10,16 +10,18 @@ const CrewContent = (props) => {
     const toggleTab = (index) => {
         setToggleState(index)
     }
+    console.log(image)
 
     return (
-        <div className={classes.crewContainer}>
-            <h2 className={classes.yourCrew}><span>02</span> Meet your crew</h2>
-            <div className={classes.cardContainer}>
+        <div className={classes.wrapper}>
+                <h2 className={classes.yourCrew}><span>02</span> Meet your crew</h2>
+            <div className={classes.crewContainer}>
+                <div className={classes.cardContainer}>
                     <p className={classes.role}>{role}</p>
                     <h1>{name}</h1>
                     <p className={classes.bio}>{bio}</p>
-            </div>
-                <div className={classes.carousel}>
+                </div>
+                    <div className={classes.carousel}>
                         <FiCircle className={toggleState === 0 ?classes.active : classes.circle}
                         onClick={() => toggleTab(0)}
                         />
@@ -33,8 +35,12 @@ const CrewContent = (props) => {
                         onClick={() => toggleTab(3)}
                         />
                     </div>
-        <img src={image} alt="crew member" className={classes.crewImg}/>
+                    <div className={classes.imgBorder}>
+                        <img src={image} alt="crew member" className={classes.crewImg}/>
+                    </div>
+            </div>
         </div>
+        
     )
 }
 
