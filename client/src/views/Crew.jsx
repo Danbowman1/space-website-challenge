@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import data from '../json/data.json'
 import classes from '../styles/Crew.module.css'
-import doug from '../assets/crew/image-douglas-hurley.jpeg'
+import doug from '../assets/crew/image-douglas-hurley.png'
 import mark from '../assets/crew/image-mark-shuttleworth.png'
 import victor from '../assets/crew/image-victor-glover.png'
 import anousheh from '../assets/crew/image-anousheh-ansari.png'

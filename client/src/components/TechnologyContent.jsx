@@ -11,9 +11,7 @@ const TechnologyContent = (props) => {
     console.log(image)
     return (
         <div className={classes.techContainer}>
-            <div>
             <h2 className={classes.launch}><span>03</span> Space Launch 101</h2>
-            <div className={classes.cardContainer}>
                 <div className={classes.tabs}>
                     <div className={toggleState === 1 ? classes.activeTab : classes.tab}
                     onClick={() => toggleTab(1)}
@@ -30,10 +28,9 @@ const TechnologyContent = (props) => {
                     <h1>{name}</h1>
                     <p className={classes.desc}>{desc}</p>
                 </div>
-            </div>
-            </div>
-                
-            <img src={image} alt="Tech" className={classes.techImg}/>
+                <div className={classes.imgContainer}>
+                    <img src={image} alt="Tech" className={classes.techImg}/>
+                </div>
         </div>
     )
 }

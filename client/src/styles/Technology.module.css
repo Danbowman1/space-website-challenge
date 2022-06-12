@@ -3,17 +3,17 @@
 }
 
 .techContainer {
-    margin-left: 11.5%;
-    display: flex;
-}
-
-.contentContainer {
-    height: 500px;
+    display: grid;
+    grid-template-areas: 
+            "launch"
+            "image"
+            "tabs"
+            "card";
 }
 
 .launch span {
     font-weight: 700;
-    font-size: 28px;
+    font-size: 16px;
     line-height: 34px;
     letter-spacing: 4.725px;
     color: #FFFFFF;
@@ -21,30 +21,28 @@
 }
 
 .launch {
-    margin-bottom: 154px;
-    font-size: 28px;
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 16px;
     text-transform: uppercase;
     color: #fff;
     font-weight: normal;
     letter-spacing: 4.7px;
-}
-
-.cardContainer {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
+    grid-area: launch;
 }
 
 .tabs {
-    height: 303px;
+    width: 152px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    grid-area: tabs;
 }
 
 .tab {
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,8 +56,8 @@
 }
 
 .activeTab {
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,13 +68,13 @@
 }
 
 .activeTab p {
-    font-size: 32px;
+    font-size: 16px;
     font-family: 'Bellefair';
     font-weight: 400;
 }
 
 .tab p {
-    font-size: 32px;
+    font-size: 16px;
     color: white;
     font-family: 'Bellefair';
     font-weight: 400;
@@ -92,29 +90,28 @@
 }
 
 .cardBody {
-margin-left: 60px;
+    text-align: center;
+    grid-area: card;
 }
 
 .intro {
-    margin: 0;
+    margin-top: 26px;
+    font-size: 14px;
     color: #D0D6F9;
     letter-spacing: 2.7px;
 
 }
 
 .cardBody h1 {
-    margin: 11px 0 17px 0;
     color: white;
-    font-size: 56px;
+    font-size: 24px;
     font-weight: 400;
     font-family: 'Bellefair';
     text-transform: uppercase;
 }
 
 .desc {
-    margin-top: 0;
-    width: 74%;
-    font-size: 18px;
+    font-size: 15px;
     color: #D0D6F9;
     line-height: 32px;
     letter-spacing: .7px;
@@ -122,6 +119,101 @@ margin-left: 60px;
 }
 
 .techImg {
-    width: 58%;
-    margin: 100px 0;
+    display: block;
+    margin: 0 auto 26px auto;
+    width: 100%;
+    grid-area: image;
+}
+
+/* Tablet styling */
+@media only screen and (min-width: 768px) {
+
+    .launch, .launch span {
+        margin: 40px;
+        text-align: start;
+        font-size: 20px;
+    }
+
+    .tabs {
+        width: 210px;
+        margin: 50px auto;
+    }
+
+    .tab, .activeTab {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tab p, .activeTab p {
+        font-size: 24px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .cardBody h1 {
+        font-size: 40px;
+    }
+
+    .desc {
+        width: 458px;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1100px) {
+    .techContainer {
+        grid-template-areas: 
+            "launch launch launch"
+            "tabs card image"
+            "tabs card image"
+            ;
+    }
+
+    .launch, .launch span {
+        font-size: 28px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .cardBody {
+        margin-left: 80px;
+        margin-top: 14%;
+        text-align: start;
+    }
+
+    .cardBody h1 {
+        margin: 11px 0;
+        font-size: 56px;
+    }
+
+    .desc {
+        margin: 0;
+    }
+
+    .tabs {
+        width: 80px;
+        margin-top: 34%;
+        height: 304px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tab, .activeTab {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tab p, .activeTab p {
+        font-size: 32px;
+    }
+
+    .techImg{
+        margin-right: 1px;
+    }
 }

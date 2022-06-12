@@ -135,7 +135,7 @@ color: #D0D6F9;
     }
 
     .crewImg {
-        height: 572px;
+        height: 530px;
         position: absolute;
         bottom: 0;
         left: 25%;
@@ -153,19 +153,52 @@ color: #D0D6F9;
 
 /* Desktop styles */
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1100px) {
     .crewContainer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;             
+        
+    }
+
+    .yourCrew, .yourCrew span {
+        font-size: 28px;
     }
 
     .cardContainer {
+        text-align: start;
+    }
+
+    .role {
+        font-size: 32px;
+    }
+
+    .crewContainer h1 {
+        margin-top: 15px;
+        line-height: 64px;
+        font-size: 56px;
+    }
+
+    .bio {
+        font-size: 18px;
+    }
+
+    .cardContainer {
+        margin-left: 5%;
         width: 786px;
+        position: absolute;
+        top: 40%;
+    }
+
+    .carousel {
+        margin-left: 5%;
+        position: absolute;
+        top: 70%;
     }
 
     .crewImg {
+        width: 25%;
+        height: auto;
+        max-height: 750px;
         position: absolute;
         left: 65%;
     }
